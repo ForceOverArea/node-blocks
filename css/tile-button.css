@@ -1,0 +1,23 @@
+/* Tile button styling for the upper ribbon menu */
+.tile-button {
+    position: absolute;
+    top:15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 30px;
+    width: 70px;
+
+    background-color: #4b4b4b;
+    filter: drop-shadow(-2px -2px 0px #7b7b7b);
+    user-select: none;
+}
+.tile-button:hover {
+    filter: drop-shadow(2px 2px 0px #7b7b7b);
+    cursor: pointer;
+}
+#save-button { left: 15px; }
+#solve-button { left: 100px; width: 280px; }
+#help-button { left: 395px; }

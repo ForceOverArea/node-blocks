@@ -1,0 +1,17 @@
+.wire {
+    position: absolute;
+    display: flex;
+    background-color: black;
+}
+
+.wire:hover {
+    border: 1px solid white;
+}
+
+.wire.x {
+    height: 2px;
+}
+
+.wire.y {
+    width: 2px;
+}

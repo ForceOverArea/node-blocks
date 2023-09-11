@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>💡&nbsp;Nanode</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="toolbar" class="toolbar">
+    <div id="resistor-spawner" class="element-container" onmouseover="addResistor()">
+      &nbsp;
+      <div class="element-block">&Omega;</div>
+      <div class="element-input">&nbsp;</div>
+      <div class="element-output">&nbsp;</div>
+    </div>
+    <div id="voltage-spawner" class="element-container" onmouseover="addBattery()">
+      &nbsp;
+      <div class="element-block">-+</div>
+      <div class="element-input">&nbsp;</div>
+      <div class="element-output">&nbsp;</div>
+    </div>
+    <!-- <div id="node-spawner" class="element-container" onmouseover="addNode()">
+      &nbsp;
+      <div class="node-node"></div>
+    </div> -->
+  </div>
+  <div id="ribbon-menu" class="ribbon-menu">
+    <div id="save-button" class="tile-button">
+      Save&nbsp;💾
+    </div>
+    <div id="solve-button" class="tile-button">
+      Solve&nbsp;⚙️
+    </div>
+    <div id="help-button" class="tile-button">
+      Help&nbsp;🔍
+    </div>
+  </div>
+  <div id="ground-node" class="element-container gnd">
+    &nbsp;
+    <div class="element-block gnd">GND</div>
+    <div class="element-output gnd">&nbsp;</div>
+  </div>
+</body>
+<script src="js/nodalAnalysis.js"></script>
+<script src="js/solver.js"></script>
+<script src="js/dynamicElements.js"></script>
+<script src="js/dragHandler.js"></script>
+<script src="js/main.js"></script>
+</html>

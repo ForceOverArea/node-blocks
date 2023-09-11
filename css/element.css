@@ -1,0 +1,94 @@
+.element-container {
+    position: absolute;
+    background-color: transparent;
+    user-select: none;
+    
+    display: flex;
+    height: 60px;
+    width: 120px;
+}
+
+.element-block {
+    position: absolute;
+    left: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 54px;
+    width: 54px;
+
+    background-color: yellow;
+    color: black;
+    font-size: 24pt;
+    border: 3px solid black;
+    border-radius: 15px;
+    cursor: grab;
+}
+
+.element-input {
+    position: absolute;
+    left: 0px;
+    top: 20px;
+
+    height: 15px;
+    width: 15px;
+
+    background-color: green;
+    border: 3px solid black;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.element-input:hover, .element-output:hover {
+    border: 3px solid white;
+}
+
+.element-output {
+    position: absolute;
+    right: 0px;
+    top: 20px;
+
+    height: 15px;
+    width: 15px;
+
+    background-color: red;
+    border: 3px solid black;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.element-container.gnd {
+    height: 90px;
+    width: 60px;
+}
+
+.element-block.gnd {
+    background-color: blue;
+    left: 0px;
+    bottom: 0px;
+}
+
+.element-output.gnd {
+    top: 0px;
+    left: 19px;
+}
+
+#resistor-spawner {
+    position: absolute;
+    left: 50px;
+    top: 50px;
+}
+
+#voltage-spawner {
+    position: absolute;
+    left: 50px;
+    top: 160px;
+}
+
+#ground-node {
+    position: absolute;
+    left: 300px;
+    bottom: 50px;
+}
